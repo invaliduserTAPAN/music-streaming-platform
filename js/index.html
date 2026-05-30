@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/utility.css">
+    <!-- <link rel="stylesheet" href="expstyle.css"> -->
+</head>
+
+<body>
+    <!-- ADD HAMBURGER MENU HERE -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ADD OVERLAY HERE -->
+    <div class="overlay"></div>
+
+    <div class="contanier flex bg-black ">
+        <div class="left">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <img class="invert" src="img/logo.svg" alt="">
+                </div>
+                <ul>
+
+                    <li><img class="invert" src="img/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="libery bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <h2>Your libery</h2>
+
+
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+
+                    <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                        Cookies
+                    </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded ">
+            <div class="header">
+                <div class="nav"></div>
+                <div class="button">
+                    <button>login</button>
+                    <button>signup</button>
+                </div>
+            </div>
+            <div class="playList">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContenier">
+                    
+
+                </div> <!-- ADDED CLOSING TAG -->
+                <div class="playbar">
+                    <!-- SEEK BAR -->
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+<div class="abovebar">
+
+
+                    <div class="songinfo"><span></span></div>
+                    <div class="songbutton">
+                        <img id="prev" src="img/previous.svg" alt="">
+                        <img id="play" src="img/play.svg" alt="">
+                        <img id="next" src="img/nextsong.svg" alt="">
+
+                    </div>
+                    <div class="timevol" >
+                    <div class="songtime">
+                       
+                    </div>
+                     <div class="volume">
+                       <img class="invert" width="36px" src="img/volume.svg" alt="">
+                       <div class="range">
+                     <input class="invert" type="range" id="volume" min="0" max="100" value="50">
+
+                       </div>
+                        </div>
+                        </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>

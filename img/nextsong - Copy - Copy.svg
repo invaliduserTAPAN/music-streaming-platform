@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <style>
+      .next-btn-circle {
+        fill: green;
+        stroke: #006400;
+        stroke-width: 1.5;
+        transition: all 0.3s ease;
+      }
+      .next-btn-circle:hover {
+        fill: #008000;
+        transform: scale(1.1);
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+      }
+      .next-btn-icon {
+        fill: #ffffff;
+        transition: all 0.3s ease;
+      }
+    </style>
+    
+    <linearGradient id="nextGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b300;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#008000;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="nextShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="24" cy="24" r="22" fill="url(#nextGradient)" class="next-btn-circle" filter="url(#nextShadow)"/>
+  <g class="next-btn-icon">
+    <polygon points="13,14 13,34 25,24" fill="#fff"/>
+    <polygon points="23,14 23,34 35,24" fill="#fff"/>
+  </g>
+</svg>
